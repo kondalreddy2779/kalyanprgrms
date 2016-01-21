@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [selenium]" parallel="true">
+  <parameter name="browser" value="firefox"/>
+  <test name="links Test on chrome(failed)" parallel="true">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="selenium.gridprog.GridDemo">
+        <methods>
+          <include name="linkGrid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- selenium.gridprog.GridDemo -->
+    </classes>
+  </test> <!-- links Test on chrome(failed) -->
+  <test name="links on firefox(failed)" parallel="true">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="selenium.gridprog.GridDemo">
+        <methods>
+          <include name="linkGrid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- selenium.gridprog.GridDemo -->
+    </classes>
+  </test> <!-- links on firefox(failed) -->
+</suite> <!-- Failed suite [selenium] -->

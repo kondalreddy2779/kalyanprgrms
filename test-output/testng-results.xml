@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50884" started-at="2016-01-09T10:15:13Z" finished-at="2016-01-09T10:16:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50884" started-at="2016-01-09T10:15:13Z" finished-at="2016-01-09T10:16:04Z">
+      <class name="selenium.robot.UploadFile">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium.robot.UploadFile@59dccc75]" name="setUp" is-config="true" duration-ms="9941" started-at="2016-01-09T15:45:13Z" finished-at="2016-01-09T15:45:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="upload()[pri:0, instance:selenium.robot.UploadFile@59dccc75]" name="upload" duration-ms="40931" started-at="2016-01-09T15:45:23Z" finished-at="2016-01-09T15:46:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload -->
+      </class> <!-- selenium.robot.UploadFile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

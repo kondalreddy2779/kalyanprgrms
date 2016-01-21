@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="true">
+  <parameter name="browser" value="firefox"/>
+  <test name="Test on chrome(failed)" parallel="true">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="selenium.pom.RegistrationTestCase1">
+        <methods>
+          <include name="registration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- selenium.pom.RegistrationTestCase1 -->
+    </classes>
+  </test> <!-- Test on chrome(failed) -->
+  <test name="Test on firefox(failed)" parallel="true">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="selenium.pom.RegistrationTestCase1">
+        <methods>
+          <include name="registration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- selenium.pom.RegistrationTestCase1 -->
+    </classes>
+  </test> <!-- Test on firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

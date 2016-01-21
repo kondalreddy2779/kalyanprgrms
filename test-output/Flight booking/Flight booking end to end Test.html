@@ -1,0 +1,395 @@
+<html>
+<head>
+<title>TestNG:  Flight booking end to end Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Flight booking end to end Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 02 10:16:32 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53888 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.testsuit.BookAFlight.bookaFlight()'><b>bookaFlight</b><br>Test class: com.test.testsuit.BookAFlight</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.test.testsuit.BookAFlight.bookaFlight(BookAFlight.java:9)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1835651475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835651475'><pre>java.lang.NullPointerException
+	at com.test.testsuit.BookAFlight.bookaFlight(BookAFlight.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.test.testsuit.BookAFlight@4eabedf1</td></tr>
+<tr>
+<td title='com.test.testsuit.Confirmation.confirmation()'><b>confirmation</b><br>Test class: com.test.testsuit.Confirmation</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.test.testsuit.Confirmation.confirmation(Confirmation.java:10)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1489336269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1489336269'><pre>java.lang.NullPointerException
+	at com.test.testsuit.Confirmation.confirmation(Confirmation.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.test.testsuit.Confirmation@79929190</td></tr>
+<tr>
+<td title='com.test.testsuit.FindAFlight.findFlight()'><b>findFlight</b><br>Test class: com.test.testsuit.FindAFlight</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.test.testsuit.FindAFlight.findFlight(FindAFlight.java:9)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2107765122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107765122'><pre>java.lang.NullPointerException
+	at com.test.testsuit.FindAFlight.findFlight(FindAFlight.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.test.testsuit.FindAFlight@6a13a848</td></tr>
+<tr>
+<td title='com.test.testsuit.Login.loginTest()'><b>loginTest</b><br>Test class: com.test.testsuit.Login</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+iver-profile\extensions\webdriver-staging
+1451710001212	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1451710001213	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
+1451710001213	addons.xpi	INFO	Mapping sp@avast.com to C:\Program Files\AVAST Software\Avast\SafePrice\FF
+1451710001213	addons.xpi	DEBUG	checkForChanges
+1451710001214	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001214	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1451710001224	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001225	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001227	addons.xpi	DEBUG	No changes found
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/qedge/AppData/Local/Temp/anonymous8854920906939103473webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1451710003316	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1451710045975	addons.manager	DEBUG	shutdown
+1451710045975	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1451710045976	addons.xpi	DEBUG	shutdown
+1451710045976	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1451710045982	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;qedge-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.test.testsuit.Login.loginTest(Login.java:10)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+iver-profile\extensions\webdriver-staging
+1451710001212	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1451710001213	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
+1451710001213	addons.xpi	INFO	Mapping sp@avast.com to C:\Program Files\AVAST Software\Avast\SafePrice\FF
+1451710001213	addons.xpi	DEBUG	checkForChanges
+1451710001214	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001214	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1451710001224	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001225	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001227	addons.xpi	DEBUG	No changes found
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/qedge/AppData/Local/Temp/anonymous8854920906939103473webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1451710003316	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1451710045975	addons.manager	DEBUG	shutdown
+1451710045975	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1451710045976	addons.xpi	DEBUG	shutdown
+1451710045976	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1451710045982	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 31 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14150015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14150015'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+iver-profile\extensions\webdriver-staging
+1451710001212	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1451710001213	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
+1451710001213	addons.xpi	INFO	Mapping sp@avast.com to C:\Program Files\AVAST Software\Avast\SafePrice\FF
+1451710001213	addons.xpi	DEBUG	checkForChanges
+1451710001214	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001214	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1451710001224	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001225	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001227	addons.xpi	DEBUG	No changes found
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/qedge/AppData/Local/Temp/anonymous8854920906939103473webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1451710003316	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1451710045975	addons.manager	DEBUG	shutdown
+1451710045975	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1451710045976	addons.xpi	DEBUG	shutdown
+1451710045976	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1451710045982	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;qedge-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.test.testsuit.Login.loginTest(Login.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+iver-profile\extensions\webdriver-staging
+1451710001212	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1451710001212	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1451710001213	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
+1451710001213	addons.xpi	INFO	Mapping sp@avast.com to C:\Program Files\AVAST Software\Avast\SafePrice\FF
+1451710001213	addons.xpi	DEBUG	checkForChanges
+1451710001214	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001214	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1451710001224	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1451710001225	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\qedge\\AppData\\Local\\Temp\\anonymous8854920906939103473webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1451709993269,&quot;mt&quot;:1451709993175}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;37.0.2&quot;,&quot;st&quot;:1450686573905,&quot;mt&quot;:1429136986000}},&quot;winreg-app-global&quot;:{&quot;wrc@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.3.13&quot;,&quot;st&quot;:1450955440034,&quot;mt&quot;:1450870519154},&quot;sp@avast.com&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;10.3.5.13&quot;,&quot;st&quot;:1450955430050,&quot;mt&quot;:1450870518979}}}
+1451710001227	addons.xpi	DEBUG	No changes found
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1451710001230	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1451710001232	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/qedge/AppData/Local/Temp/anonymous8854920906939103473webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1451710003316	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1451710045975	addons.manager	DEBUG	shutdown
+1451710045975	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1451710045976	addons.xpi	DEBUG	shutdown
+1451710045976	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1451710045976	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1451710045977	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1451710045982	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 31 more
+</pre></div></td>
+<td>53</td>
+<td>com.test.testsuit.Login@507aa91b</td></tr>
+<tr>
+<td title='com.test.testsuit.SelectAFlight.selectFlight()'><b>selectFlight</b><br>Test class: com.test.testsuit.SelectAFlight</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.test.testsuit.SelectAFlight.selectFlight(SelectAFlight.java:9)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace317112639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace317112639'><pre>java.lang.NullPointerException
+	at com.test.testsuit.SelectAFlight.selectFlight(SelectAFlight.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.test.testsuit.SelectAFlight@308d4560</td></tr>
+</table><p>
+</body>
+</html>

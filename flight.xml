@@ -1,0 +1,22 @@
+<suite name="selenium" parallel="tests">
+  <test name="Flight booking end to end Test on chrome">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      	<class name="com.test.testsuit.Login"/>
+	<class name="com.test.testsuit.FindAFlight"/>
+	<class name="com.test.testsuit.SelectAFlight"/>
+      	<class name="com.test.testsuit.BookAFlight"/>
+	<class name="com.test.testsuit.Confirmation"/>
+    </classes>
+  </test>
+  <test name="Flight booking end to end Test on firefox">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      	<class name="com.test.testsuit.Login"/>
+	<class name="com.test.testsuit.FindAFlight"/>
+	<class name="com.test.testsuit.SelectAFlight"/>
+      	<class name="com.test.testsuit.BookAFlight"/>
+	<class name="com.test.testsuit.Confirmation"/>
+    </classes>
+  </test>
+</suite> 

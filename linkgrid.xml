@@ -1,0 +1,14 @@
+<suite name="selenium" parallel="true">
+  <test name="links Test on chrome">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      	<class name="selenium.gridprog.GridDemo"/>
+    </classes>
+  </test>
+  <test name="links on firefox">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      	<class name="selenium.gridprog.GridDemo"/>
+    </classes>
+  </test>
+</suite>
